@@ -76,8 +76,11 @@ WSGI_APPLICATION = 'restaurant.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'sample4',
+        'USER': 'postgres',
+        'PASSWORD': 'password', #you can include this in an environment variable.
+        'HOST': 'localhost', #This will need to be changed to your databases.
     }
 }
 
