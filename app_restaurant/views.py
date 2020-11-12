@@ -1,3 +1,4 @@
+from django.http import HttpResponseRedirect  
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -21,11 +22,11 @@ def getRandom(request):
     return HttpResponse('getRandom')
 
     
-def searchAvailable(request):
+def searchAvailable(request, query):
     """
     This returns search results from the available restaurants.
     """
-    return HttpResponse('searchAvailable')
+    return HttpResponse('searchAvailable for ' + query)
 
     
 def getRecommendation(request):
@@ -33,3 +34,9 @@ def getRecommendation(request):
     This returns a recommended restaurant.
     """
     return HttpResponse('getRecommendation')
+
+def redirectToBetterSite(request):
+    """
+    This returns a redirect.
+    """
+    return HttpResponseRedirect("http://myeducator.com/")
