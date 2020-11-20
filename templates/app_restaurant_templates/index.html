@@ -330,7 +330,11 @@
       </div>      
     </div>
 
-
+<form action="api/recommendations/" method="POST">
+  {% csrf_token %}
+  <table>{{ form.as_table}}</table>
+  <input type="submit" value="Submit">
+</form>
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
