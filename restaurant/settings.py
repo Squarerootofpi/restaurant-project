@@ -35,7 +35,7 @@ SECRET_KEY = '0xw0zf#^slqq^jq*nzzoeed2shk(4oi&-arf!d%y&+36paey73'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['safe-ridge-27346.herokuapp.com']
+ALLOWED_HOSTS = ['safe-ridge-27346.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
