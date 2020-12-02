@@ -88,6 +88,41 @@
   .panel:hover {
     box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
+  .restaurant-table {
+    background-color: #E6E6E6;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    height: 60px;
+    font-family: 'Public Sans', sans-serif;
+    border: none;
+}
+
+td, tr {
+    color: #141414;
+    border: none;
+}
+
+tr:hover, tr:nth-child(even):hover {
+    background-color: white;
+    text-emphasis: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #C5C5C5;
+}
+
+th {
+    color: white;
+    background-color: #0062BB;
+    position: sticky;
+}
   .panel-footer .btn:hover {
     border: 1px solid #037ffc;
     background-color: #fff !important;
@@ -268,10 +303,46 @@
             <h3>Choose a Place That Sounds Good</h3>
         </div>
         <div class="panel-body">
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+            <div class="container">
+                <table class='restaurant-table'>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Cost</th>
+                            <th>Cuisine</th>
+                            <th>Health Factor</th>
+                            <th>Wait Time</th>
+                            <th>Travel Time</th>
+                            <th>Drive Through</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for rest in all_restaurants %}
+                            <tr>
+                                <td>{{ rest.name }}</td>
+                                {% if rest.cost != None %}
+                                    <td>{{ rest.cost }}</td>
+                                {% endif %}
+                                {% if rest.cuisine != None %}
+                                    <td>{{ rest.cuisine }}</td>
+                                {% endif %}
+                                {% if rest.health_factor != None %}
+                                    <td>{{ rest.health_factor }}</td>
+                                {% endif %}
+                                {% if rest.wait_time != None %}
+                                    <td>{{ rest.wait_time }}</td>
+                                {% endif %}
+                                {% if rest.travel_time != None %}
+                                    <td>{{ rest.travel_time }}</td>
+                                {% endif %}
+                                {% if rest.drive_through != None %}
+                                    <td>{{ rest.drive_through }}</td>
+                                {% endif %}
+                            </tr>
+                        {% endfor %} 
+                    </tbody>
+                </table>
+            </div>
       </div>  
      </div>       
   </div>
@@ -295,7 +366,7 @@
                 <div class="card-body">
                   <form>
                     <div class="form-group">
-                        <label for="q1">Select list:</label><br>
+                        <label for="q1"></label><br>
                         <select class="form-control" id="q1"><br>
                           <option>1</option>
                           <option>2</option>
@@ -330,11 +401,7 @@
       </div>      
     </div>
 
-<form action="api/recommendations/" method="POST">
-  {% csrf_token %}
-  <table>{{ form.as_table}}</table>
-  <input type="submit" value="Submit">
-</form>
+
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
