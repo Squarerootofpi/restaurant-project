@@ -7,6 +7,7 @@
 *.pot
 *.pyc
 __pycache__/
+migrations/
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -154,3 +155,4 @@ dmypy.json
 
 # End of https://www.toptal.com/developers/gitignore/api/django
 .group4-1proj.zip
+staticfiles/
