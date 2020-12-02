@@ -7,12 +7,17 @@ class Restaurant(models.Model):
     """A typical class defining a model, derived from the Model class."""
 
     # Fields
-    my_field_name = models.CharField(max_length=20, help_text='Enter field documentation')
-    ...
+    name = models.CharField(max_length=20, help_text='Enter field documentation')
+    cost = models.CharField(max_length=100, null=True)
+    cuisine = models.CharField(max_length=100, null=True)
+    health_factor = models.CharField(max_length=100, null=True)
+    wait_time = models.IntegerField(null=True)
+    travel_time = models.IntegerField(null=True)    
+    drive_through = models.BooleanField(null=True)
 
     # Metadata
     class Meta: 
-        ordering = ['-my_field_name']
+        ordering = ['-name']
 
     # Methods
     def get_absolute_url(self):
@@ -21,5 +26,16 @@ class Restaurant(models.Model):
     
     def __str__(self):
         """String for representing the MyModelName object (in Admin site etc.)."""
-        return self.my_field_name
+        return self.name
 
+class RecommendationsForm(models.Model):
+    cost = models.CharField(max_length=100)
+    cuisine = models.CharField(max_length=100)
+    health_factor = models.CharField(max_length=100)
+    wait_time = models.IntegerField(null=True)
+    travel_time = models.IntegerField(null=True)    
+    drive_through = models.BooleanField(null=True)
+
+    def __str__(self):
+        return self.cost
+    
