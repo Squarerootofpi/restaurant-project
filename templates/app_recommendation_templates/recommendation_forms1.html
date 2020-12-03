@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block forms %}
+    <div class="container">
+        <div class="row">
+            <form method="get" action="{% url 'rec-final' %}">
+                <h1>Person 1</h1>
+                <br>
+                <div id="person1">
+                    <label for="cost1">Price Range</label>
+                    <select id="cost1" name="cost1">
+                        <option value="1">$</option>
+                        <option value="2">$$</option>
+                        <option value="3">$$$</option>
+                        <option value="4">$$$$</option>
+                    </select>
+                    <br>
+                    <h3>What sounds good right now? (check all that apply)</h3>
+                    
+                        {% for cuisine in allCuisines %}
+                            <label for="{ cuisine }}">{{ cuisine }} </label>
+                            <input type="checkbox" id='{{ cuisine }}' name="{{ cuisine }}" value="{{ cuisine }}">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        {% endfor %}
+
+                    <br><br>
+                    <label for="rating1">Please select the minimum rating for the restaurant (based on google reviews) &nbsp;</label>
+                    <select id="rating1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                </div>
+                <button type="submit" >Submit</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+    

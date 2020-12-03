@@ -56,6 +56,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app_restaurant.apps.AppRestaurantConfig',
+    'recommendations.apps.RecommendationsConfig',
+    
 ]
 
 MIDDLEWARE = [
@@ -97,7 +99,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'sample4',
         'USER': 'postgres',
-        'PASSWORD': 'password', #you can include this in an environment variable.
+        'PASSWORD': 'admin', #you can include this in an environment variable.
         'HOST': 'localhost', #This will need to be changed to your databases.
     }
 }

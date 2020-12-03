@@ -1,0 +1,435 @@
+id,name,price_range,cuisine1,cuisine2,cuisine3,rating
+1,Austin's BBQ and Oyster Bar,2,BBQ,Burger,Seafood,3.3
+2,BJ's Country Buffet,1,American,BBQ,,3.3
+3,Cookie Shoppe,1,,,,3.4
+4,El Vaquero Mexican Restaurant,1,Mexican,,,3.4
+5,Elements Coffee Co - Northwest,1,Coffee and Tea,Sandwich,,3.4
+6,Pearly's Famous Country Cookng,1,,,,3.4
+7,Chick-fil-A,1,Fast Food,,,3.5
+8,Guang Zhou Chinese Restaurant,1,Asian,Chinese,Vegetarian,3.9
+9,Harvest Moon,2,Pizza,Bar Food,Sandwich,3.7
+10,Henry Campbell's Steakhouse,4,Steak,Tapas,Bar Food,3.5
+11,Hong Kong Cafe,2,Chinese,Seafood,Vegetarian,3.6
+12,House of China Restaurant II,1,Chinese,,,3.8
+13,Jimmie's Hot Dogs,1,,,,3.9
+14,Locos Grill & Pub,2,American,Burger,Sandwich,3.5
+15,Longhorn Steakhouse,2,American,Steak,,3.5
+16,Mikata Japanese Steakhouse,3,Japanese,Steak,Sushi,3.6
+17,Shogun Japanese Steak House,3,Japanese,Steak,Sushi,3.5
+18,The Catch Seafood Room & Oyster Bar,3,Seafood,Tapas,Bar Food,3.8
+19,Villa Gargano,1,Italian,Pizza,,3.7
+20,3 Squares Diner,1,American,Breakfast,Diner,3.4
+21,Last Resort Grill,3,American,Southern,Southwestern,4.5
+22,Mama's Boy Restaurant,1,Southern,,,4.5
+23,Sr. Sol 1,1,Mexican,,,4.6
+24,Choo Choo Eastside,1,Japanese,Korean,,3.9
+25,The Grill,1,Breakfast,Burger,Sandwich,3.7
+26,Big City Bread Cafe,1,Breakfast,Sandwich,,4.3
+27,Clocked,1,American,Burger,Sandwich,4.2
+28,DePalma's Italian Cafe - Downtown,2,American,Italian,Pizza,4
+29,DePalma's Italian Cafe - East Side,2,American,Italian,Pizza,4.1
+30,Five & Ten,3,American,,,4.3
+31,Grit,1,International,Southern,Vegetarian,4.2
+32,Ike & Jane,1,Sandwich,,,4.1
+33,La Dolce Vita Ristorante,3,Italian,,,4.1
+34,Shokitini,2,Asian,Japanese,Sushi,4.2
+35,Taqueria Del Sol,1,Mexican,Spanish,,4.1
+36,The National,3,International,Southern,,4.1
+37,The Royal Peasant,1,Bar Food,,,4.4
+38,Transmetropolitan,1,Italian,Pizza,Sandwich,4.4
+39,Trappeze Pub,2,Burger,Bar Food,,4.2
+40,Viva! Argentine Cuisine,1,Desserts,Latin American,Argentine,4.1
+41,Miyabi Kyoto Japanese Steak House,3,Chinese,Steak,,4.6
+42,Rae's Coastal Cafe,3,American,Caribbean,Seafood,4.9
+43,The Bee's Knees,2,International,Tapas,Vegetarian,4.5
+44,Boll Weevil Cafe,1,Desserts,Sandwich,Southern,3.9
+45,Farmhaus Burger,2,American,Burger,,3.9
+46,Manuel's Bread Cafe,3,Breakfast,French,,3.8
+47,Sconyers Bar B Que,2,BBQ,,,3.5
+48,Frog Hollow Tavern,3,American,,,4.3
+49,Giuseppe's Pizza & Italian Specialities,2,Desserts,Italian,Pizza,4.1
+50,Mellow Mushroom,2,Italian,Pizza,Sandwich,4.4
+51,Nacho Mamas Burritos,1,Mexican,,,4
+52,Rhinehart's Oyster Bar,2,Bar Food,Sandwich,Seafood,4
+53,Takosushi,3,Mexican,Southwestern,Sushi,4.2
+54,The Chop House,3,Steak,,,4
+55,The Taj of India,2,Indian,,,4
+56,Augsburg Haus,2,German,,,3.9
+57,Pho Bac,1,Vietnamese,,,4.1
+58,Rhinehart's Oyster Bar,2,Burger,Seafood,,4
+59,Thai Kitchen,3,Thai,,,4.3
+60,El Kiosco Mexican Restaurant,1,Mexican,,,4.2
+61,Bardenay,2,American,Bar Food,,4.5
+62,Flatbread Neapolitan Pizzeria,2,Italian,Pizza,,4.6
+63,Goldy's Breakfast Bistro,2,Breakfast,Sandwich,,4.5
+64,Chandlers Steakhouse,4,American,Seafood,Steak,3.9
+65,Bar Gernika Basque Pub & Eatery,1,European,Spanish,,4.3
+66,Barbacoa Restaurant,4,Latin American,Steak,,4.1
+67,Big Jud's,1,American,Burger,Sandwich,4.2
+68,Bittercreek Ale House,2,American,Bar Food,,4.3
+69,Boise Fry Company,1,American,Burger,,4.4
+70,Flying Pie Pizzaria,2,Pizza,,,4.1
+71,Fork,2,American,Burger,,4.4
+72,Guido's Original New York Style Pizza,1,Pizza,,,4.3
+73,Los Beto's,1,Mexican,,,4.4
+74,Lucianos Italian Restaurant,2,Italian,Seafood,Vegetarian,4.4
+75,Mai Thai Restaurant,3,Sushi,Thai,,4
+76,Shige Japanese Cuisine,2,Japanese,Sushi,Teriyaki,4.1
+77,The Egg Factory,1,Breakfast,,,4.3
+78,Tucanos,3,Brazilian,,,4
+79,Texas Roadhouse,2,American,BBQ,Steak,4
+80,Brick 29,3,American,,,4.4
+81,Winifreds,3,American,Mediterranean,Seafood,3.7
+82,Biaggi's Ristorante Italiano,3,Italian,Pizza,,4.1
+83,El Super Burrito,1,Mexican,,,4.1
+84,Granite City Food & Brewery,3,American,Breakfast,Burger,4.1
+85,Irish Democrat,2,American,BBQ,Burger,4.4
+86,Taste of India,2,Indian,,,4.2
+87,Thai Moon Restaurant,1,Chinese,Sushi,Thai,4.2
+88,Ting's Red Lantern,1,Chinese,,,4.2
+89,Monica's,2,American,Italian,Pizza,3.8
+90,Exotic India,2,Indian,,,4.1
+91,Shorts Burger and Shine,1,Burger,,,4.9
+92,The Hamburg Inn No. 2 Inc.,1,American,Breakfast,Burger,4.5
+93,Bluebird Diner,2,Breakfast,Diner,,3.6
+94,Graze,3,American,International,Sushi,3.8
+95,A & A Pagliai's Pizza,2,Pizza,,,4.3
+96,Atlas World Grill,3,International,,,4.3
+97,BlackStone,2,American,Breakfast,,4.1
+98,Devotay,3,Mediterranean,Tapas,Vegetarian,4
+99,Jimmy Jack's Rib Shack,2,BBQ,,,4.2
+100,Zoeys Pizzeria,2,Pizza,Sandwich,,4.7
+101,Berry Patch Restaurant,1,American,Breakfast,Desserts,4.3
+102,Sakura Sushi & Grill,2,Asian,Japanese,,3.1
+103,Uptown Vietnam cuisine,1,Asian,Vietnamese,,3.3
+104,Cafe Le Rue @ The Landings,2,American,Seafood,Cajun,4.6
+105,Mark's City Grille,2,American,,,4.5
+106,B Merrell's,2,Burger,Bar Food,Southern,3.8
+107,Cannon Brewpub,2,Pizza,Bar Food,,3.9
+108,Fuji Japanese Steak House,3,Japanese,Steak,,3.9
+109,Ruth Ann's Family Restaurant,1,Breakfast,Diner,Southern,3.7
+110,Samurai Japanese Cuisine & Sushi Bar,3,Japanese,Steak,Sushi,3.6
+111,Wasabi Sushi and Thai,3,Japanese,Sushi,Thai,3.7
+112,Buckhead Bar and Grill,3,Seafood,Steak,Vegetarian,4.2
+113,Burt's Butcher Shoppe and Eatery,2,Steak,,,4.3
+114,Chef Lee's Peking Restaurant,2,Chinese,,,4
+115,Country's Barbecue,2,BBQ,Southern,,4
+116,Deorio's,1,Italian,Pizza,,4
+117,Mellow Mushroom,2,Pizza,,,4.1
+118,Meritage,3,American,Tapas,,4.1
+119,Mongo The Mongolian Fire Pit,1,Asian,Chinese,,4.2
+120,The Black Cow,2,American,,,4.3
+121,Wood Stone,3,Italian,Mediterranean,Pizza,4
+122,Hunter's Pub,3,American,Seafood,Steak,4.4
+123,Thatcher's Barbeque and Grill,2,American,BBQ,Southern,3.7
+124,Christian and Jake's Bistro,1,Desserts,Sandwich,,4.4
+125,Dub's High on the Hog,2,BBQ,,,4.4
+126,Sierra's Mexican Restaurant,1,Mexican,Tex-Mex,,3.9
+127,Oakwood Cafe,1,BBQ,Breakfast,Southern,4.9
+128,Chili's Grill & Bar,2,American,,,3.8
+129,Fuji Japanese Steakhouse,3,Japanese,Sushi,,3.8
+130,Las Palmas,1,Mexican,,,3.8
+131,Tony's Italian Restaurant & Pizza,2,Italian,,,3.7
+132,Filling Station,1,American,Burger,,4.1
+133,Five Guys Burgers and Fries,1,Fast Food,,,4.1
+134,Los Pablos,1,Mexican,,,4.1
+135,Kobe Hibachi & Sushi,2,American,Japanese,Sushi,4.6
+136,Soho Hibachi,1,Japanese,,,4.3
+137,Thai Garden,2,Thai,,,4.2
+138,Southern Bliss Bakery,1,Desserts,Sandwich,,3.7
+139,Bailey's Bar-B-Que,1,BBQ,,,4.1
+140,Farm To Fork,1,American,Diner,Southern,4.3
+141,Home Plate Grill,1,American,BBQ,Southern,4.2
+142,Pie Slingers Pizzeria,1,Italian,Pizza,,4.1
+143,Olive Tree Cafe,2,Indian,Mediterranean,Middle Eastern,4.6
+144,"Red Ginger Sushi, Grill & Bar",3,Sushi,Teriyaki,,4.5
+145,Crust Stone Oven Pizza,2,Burger,Pizza,,3.9
+146,Jimmy's Pancake House,1,American,Breakfast,Greek,4
+147,Trattoria Tiramisu,2,Italian,,,4.1
+148,Prairie Grille at SteepleGate Inn,2,American,Breakfast,,3.4
+149,Tantra Asian Bistro,2,Asian,,,4.9
+150,Chick-fil-A,1,Fast Food,,,3.9
+151,Duck City Bistro,4,American,French,,3.7
+152,Frick's Tap,2,American,Bar Food,BBQ,0
+153,Los Agaves,2,Mexican,,,0
+154,Azteca,1,Mexican,,,4.3
+155,China Cafe,2,Chinese,,,4
+156,Exotic Thai Restaurant,2,Thai,,,4.1
+157,Front Street Brewery,1,American,,,4.3
+158,Granite City Food & Brewery,2,American,,,4
+159,Los Agaves,2,Mexican,,,4.1
+160,Machine Shed Restaurant,2,American,,,4.1
+161,Osaka,3,Japanese,Sushi,,4.2
+162,Texas Roadhouse,2,American,BBQ,Steak,4.2
+163,Hickory Park,2,BBQ,Burger,Desserts,4.5
+164,The Cafe,2,American,Coffee and Tea,,4.9
+165,Flying Mango,3,BBQ,Caribbean,Cajun,4.5
+166,Cool Basil,2,Asian,Sushi,Thai,4.1
+167,HuHot Mongolian Grill,2,Asian,Chinese,,4
+168,Malo,2,Latin American,Mexican,,3.2
+169,Centro,3,Italian,Pizza,,4.5
+170,Fong's Pizza,2,Chinese,Pizza,,4.6
+171,A Dong Restaurant,1,Asian,Vegetarian,Vietnamese,4.4
+172,Court Avenue Brewing Company,3,American,Pizza,Bar Food,4.2
+173,Django,3,French,,,4.3
+174,Miyabi 9,2,Japanese,Sushi,,4.8
+175,Zombie Burger + Drink Lab,1,Burger,Desserts,Vegetarian,4.2
+176,Tursi's Latin King,4,American,Italian,,4.1
+177,Tsing Tsao South,1,Chinese,,,4.1
+178,Bandit Burrito,1,Breakfast,Mexican,Southwestern,4
+179,Jethro's BBQ,2,American,BBQ,,4.3
+180,The Machine Shed Restaurant,2,American,Breakfast,,3.8
+181,Mi Patria,2,Latin American,,,4
+182,Waterfront Seafood Market,3,Seafood,Sushi,,4.2
+183,Burnt Toast Cafe,1,Breakfast,,,3.4
+184,Catfish Charlie's,2,Seafood,,,3.3
+185,Salsa's Mexican Restaurant,1,Mexican,,,3.4
+186,Tony Roma's,2,American,BBQ,Seafood,3.3
+187,Vinny Vanucchi's,2,Italian,,,3.4
+188,Champps Americana,2,American,Burger,Sandwich,3.5
+189,Fiesta Cancun,1,Mexican,,,3.6
+190,Happy Joe's Pizza & Ice Cream,1,Desserts,Pizza,Ice Cream,3.5
+191,Houlihan's,2,American,Burger,,3.6
+192,Ichiban Hibachi Steakhouse & Sushi Bar,3,Japanese,Steak,Sushi,3.7
+193,Kalmes Breaktime Bar & Grill,2,American,Burger,,3.6
+194,L. May Eatery,3,International,Pizza,,3.8
+195,Los Aztecas,1,Mexican,,,3.5
+196,Manna Java World Cafe,1,Breakfast,Pizza,,3.5
+197,Mario's Italian Restaurant,2,American,Italian,,3.6
+198,Pepper Sprout Incorporated,3,American,,,3.6
+199,Shot Tower Inn,2,Italian,Pizza,,3.6
+200,Sunshine Family Restaurant,1,American,Breakfast,Burger,3.5
+201,Watershed Cafe,2,American,Burger,Pizza,3.7
+202,Woodfire Grille,4,American,Seafood,Steak,3.6
+203,Jehova es Mi Pastor Tacos y Burritos,1,Mexican,,,3.7
+204,Houndstooth Grill & Tavern,2,American,Sandwich,Seafood,4.4
+205,Hawg Wild BBQ & Catfish House,1,BBQ,Burger,Seafood,4.1
+206,Bourbon Street Grille,2,American,Burger,Cajun,3.8
+207,Corkscrew Cafe,3,,,,3.9
+208,Smokin Gold BBQ,1,BBQ,,,3.9
+209,Hoka-Hoka Japanese Steak & Sushi,1,Chinese,Japanese,Thai,4.4
+210,Shenanigan's Irish Pub,2,Bar Food,Seafood,Vegetarian,4.1
+211,Fish Tales Lakeside Grille,2,Seafood,,,3.8
+212,Antebellum,3,American,Southern,,4.3
+213,Moonie's Texas Barbecue,1,BBQ,Sandwich,,4.1
+214,Atlanta Highway Seafood Market,2,Sandwich,Seafood,Cajun,4.9
+215,Eat at Thai,1,Thai,,,4.6
+216,Smoke House BBQ and Catering,2,BBQ,,,3.8
+217,2 Dog,2,American,European,Sandwich,4.2
+218,Longstreet Cafe,1,Southern,,,4.3
+219,Re-Cess,2,American,Southern,,4.2
+220,Bodensee,3,German,,,3.8
+221,Hofer's Bakery & Cafe,1,German,Ice Cream,,3.9
+222,Troll Tavern,2,Burger,German,Sandwich,2.2
+223,The Nacoochee Village Tavern & Pizzeria,1,Italian,Pizza,Sandwich,4
+224,Burger Queen Drive In,1,Burger,Desserts,Sandwich,3.6
+225,Blue Orchid Thai Restaurant,2,Thai,,,4.5
+226,Emilio's Cuban Cafe,2,Coffee and Tea,Cuban,Latin American,3.9
+227,Ingleside Village Pizza,1,Pizza,Sandwich,,4.9
+228,Jim Shaw's Seafood Grill & Bar,2,Seafood,,,4.6
+229,Mandarin Chinese Restaurant,2,Chinese,Thai,,4.5
+230,Rookery,2,Burger,Desserts,Bar Food,4.5
+231,Dovetail,3,,,,3.8
+232,Bonefish Grill,3,American,Seafood,,4.1
+233,Downtown Grill,4,Steak,,,4
+234,Greek Corner Deli,1,Desserts,Greek,Sandwich,4.3
+235,Natalia's,4,European,Italian,Mediterranean,4.2
+236,Papouli's Mediterranean Cafe & Market,1,Greek,Mediterranean,Vegetarian,4.2
+237,Benson's Steak and Sushi,2,American,Chinese,Sushi,3.7
+238,My Fathers Place,2,Italian,,,3.7
+239,Sushi Thai Restaurant,1,Japanese,Sushi,Thai,3.7
+240,The Mellow Mushroom,2,Pizza,Sandwich,Vegetarian,3.8
+241,El Jalisciense Mexican Restaurant,1,Mexican,,,4.1
+242,Greek Village,2,American,Greek,Seafood,4
+243,Martin's BBQ,2,BBQ,,,4.2
+244,Thai Pepper,1,Japanese,Sushi,Thai,4
+245,Zen Japanese Steakhouse and Sushi Bar,3,Japanese,Steak,Sushi,4.1
+246,Triangle Restaurant,1,Breakfast,Burger,,2.4
+247,HI Lite Bar & Lounge,1,,,,3.4
+248,Vince's Restaurant & Pizzeria,2,Italian,Pizza,,3.6
+249,The Artesian Restaurant,3,American,International,Southwestern,3.6
+250,CevÌ_che Tapas Bar & Restaurant,3,Spanish,Tapas,,4.4
+251,Ohana,3,Hawaiian,,,4.5
+252,Earl of Sandwich,3,American,Sandwich,Salad,4.7
+253,Raglan Road Irish Pub and Restaurant,4,Irish,,,4.3
+254,CafÌ© Tu Tu Tango,3,New American,Tapas,,4.6
+255,Texas de Brazil,4,Brazilian,Steak,,4.6
+256,Bahama Breeze Island Grille,3,Caribbean,,,4.3
+257,Maggiano's Little Italy,4,Italian,,,4.4
+258,Hawkers Asian Street Fare,3,Asian,Thai,,4.6
+259,Tako Cheena by Pom Pom,1,Asian,Latin American,Vegetarian,4.4
+260,Seasons 52 Fresh Grill,4,American,,,4.4
+261,Hollerbach's Willow Tree CafÌ©,3,German,,,4.8
+262,Pom Pom's Teahouse and Sandwicheria,2,American,Sandwich,Tea,4.9
+263,Yellow Dog Eats,3,American,BBQ,Sandwich,4.9
+264,Tibby's New Orleans Kitchen,2,Cajun,,,4.7
+265,The Coop,2,Southern,Cajun,Soul Food,3.6
+266,Bosphorous Turkish Cuisine,3,Mediterranean,Turkish,,4.2
+267,Ethos Vegan Kitchen,2,American,Breakfast,Vegetarian,4.4
+268,Hillstone,3,,,,4.4
+269,The Ravenous Pig,3,Pub Food,,,4.4
+270,Cactus Flower Cafe Navarre,2,Mexican,Southwestern,Tex-Mex,4.2
+271,McGuire's Irish Pub & Brewery,3,Burger,Bar Food,Steak,4.9
+272,New Yorker Deli & Pizzeria,1,Italian,Pizza,Sandwich,4.6
+273,Tu-Do Vietnamese Restaurant,1,Asian,Vietnamese,,4.5
+274,Carrabba's Italian Grill,3,Italian,Pizza,Seafood,3.7
+275,Jaco's Bayfront Bar and Grille,2,Tapas,,,3.9
+276,The Tin Cow,2,Burger,Bar Food,,3.7
+277,Cactus Flower Cafe,2,Latin American,Mexican,Southwestern,4.2
+278,Dharma Blue,3,Seafood,Sushi,,4.1
+279,Global Grill,3,European,International,Tapas,4.4
+280,Ichiban,2,Japanese,Sushi,,4.3
+281,The Fish House,3,American,Seafood,Sushi,4
+282,Tuscan Oven,2,Italian,Mediterranean,Pizza,4.1
+283,Flounders Chowder House,3,Seafood,,,3.9
+284,Hemingway's Island Grill,3,Caribbean,Seafood,Steak,3.5
+285,Native Cafe,2,Breakfast,Burger,,4.2
+286,Peg Leg Pete's,3,Burger,Sandwich,Seafood,4.4
+287,The Grand Marlin,3,Caribbean,Seafood,,4.3
+288,Original Georgios Authentic Greek Food,1,Greek,,,4.7
+289,Fisherman's Corner,3,Sandwich,Seafood,Cajun,4.4
+290,Rupes Burgers,1,Burger,Fast Food,,3.7
+291,Texas Roadhouse,3,American,BBQ,Steak,3.5
+292,Riverwalk Cafe,1,Asian,Thai,,3.6
+293,Royal Hotel,1,Pizza,Bar Food,,3.6
+294,Buddy's Italian Restaurant,3,Italian,Pizza,Sandwich,3.7
+295,Butterburrs,3,American,Breakfast,,3.6
+296,Chang Garden,1,Chinese,,,3.5
+297,Fifth Street Bagelry,1,Coffee and Tea,Sandwich,,3.8
+298,Goody's Deli,1,Pizza,Sandwich,,3.8
+299,Grecian Key Restaurant,2,American,Greek,,3.7
+300,Outer Limits Fun Zone,1,Burger,Pizza,Sandwich,3.5
+301,Portneuf Valley Brewing,2,American,Pizza,,3.7
+302,Sandpiper Restaurant & Lounge,3,American,Seafood,Steak,3.6
+303,Senor Iguanas,1,Mexican,,,3.6
+304,Sushi Family,2,Asian,Sushi,Vegetarian,3.6
+305,Taste of India Nepal,2,Indian,International,Vegetarian,3.8
+306,Thai Paradise,2,Desserts,Thai,,3.7
+307,The Bridge,3,New American,,,3.6
+308,Nosh Mahal,2,Indian,Persian,,0
+309,El Herradero,1,Mexican,,,4.1
+310,Barrett Junction Cafe,2,American,BBQ,Burger,3.3
+311,Blue Point Grill,4,Seafood,,,4
+312,Giovanni's Shrimp Truck,2,Seafood,,,4.5
+313,Kona Brewing Company,3,American,Pizza,Bar Food,4.7
+314,Leonard's Bakery,1,,,,4.7
+315,Coconuts Fish Cafe,3,Seafood,,,4.5
+316,Kihei Caffe,1,American,Hawaiian,,4.5
+317,Monkeypod Kitchen by Merriman,3,Burger,,,4.2
+318,Sansei Seafood Restaurant & Sushi Bar,3,Japanese,Seafood,Sushi,4.2
+319,Star Noodle,1,Asian,,,4.6
+320,Aloha Mixed Plate,1,Asian,Breakfast,Hawaiian,4.2
+321,Gazebo,2,Breakfast,Burger,,4.4
+322,Hula Grill,3,Hawaiian,Seafood,Steak,4.3
+323,Kimo's,3,Hawaiian,Seafood,Steak,4.3
+324,Mama's Fish House,4,Hawaiian,Seafood,,4.9
+325,Marukame Udon,1,Japanese,,,4.9
+326,Yard House,3,American,Asian,Burger,4.6
+327,Lulu's Waikiki,2,American,,,3.9
+328,Duke's Waikiki,4,Hawaiian,Seafood,Steak,4.4
+329,Eggs 'n Things,1,Breakfast,,,4
+330,Roy's,4,Asian,European,Seafood,4.2
+331,Wailana Coffee House,2,American,Breakfast,Hawaiian,4.2
+332,The Lady & Sons,3,Southern,,,3.3
+333,Green Truck Pub,3,Burger,,,4.7
+334,Leopold's Ice Cream,1,Desserts,Sandwich,Ice Cream,4.6
+335,Mrs. Wilkes' Dining Room,3,American,Southern,,4.5
+336,Zunzi's,2,International,Mediterranean,Sandwich,4.5
+337,Moon River Brewing Company,2,American,Bar Food,Sandwich,3.7
+338,Pirates' House Restaurant,3,American,Seafood,Steak,3.8
+339,B. Matthew's Eatery,2,American,Breakfast,,4.1
+340,Crystal Beer Parlor,2,American,Bar Food,,4.4
+341,Goose Feathers Cafe and Bakery,1,Breakfast,Vegetarian,,4.2
+342,Henry's,1,American,Breakfast,,4.1
+343,Huey's On The River,3,Breakfast,Cajun,,4.1
+344,J. Christopher's,2,Breakfast,Diner,Sandwich,4.3
+345,Lulu's Chocolate Bar,1,Coffee and Tea,Desserts,,4.3
+346,Rocks on the River,4,Pizza,Seafood,Steak,4
+347,SOHO South Cafe,2,Cafe,Sandwich,Southern,4.3
+348,The Olde Pink House,4,American,Seafood,Southern,4.4
+349,Vic's On The River,4,American,,,4.1
+350,The Crab Shack,3,Seafood,,,3.8
+351,Tybee Island Social Club,1,,,,3.9
+352,Archie's Waeside,3,Burger,Seafood,Steak,3.7
+353,Bob Roe's Pizza,1,American,Pizza,Bar Food,3.6
+354,Da Kao Restaurant,1,Asian,Vegetarian,Vietnamese,3.8
+355,Famous Dave's,1,BBQ,,,3.6
+356,Fuji Bay Japanese Restaurant,3,Japanese,Sushi,,3.7
+357,HuHot Mongolian Grill,2,Asian,Chinese,,3.6
+358,Hunan Palace,2,Chinese,,,3.8
+359,Jerry's Pizza,2,Pizza,,,3.8
+360,Jim's Burgers,1,Burger,,,3.7
+361,Johnnie Mars,1,American,Desserts,Diner,3.9
+362,Miles Inn,1,American,,,3.7
+363,Milwaukee Wiener House,1,American,Fast Food,,3.8
+364,Minerva's Food & Cocktails,3,American,Seafood,Steak,3.7
+365,Monterrey Mexican Restaurant,1,Mexican,,,3.7
+366,Rebos,2,Caribbean,Mexican,Cajun,3.8
+367,Tokyo Japanese Steakhouse & Sushi Bar,3,Japanese,Steak,Sushi,3.9
+368,Diamond Thai Cuisine,1,Asian,Thai,Vegetarian,4
+369,El Fredo Pizza,3,Pizza,,,4
+370,Trattoria Fresco,2,Italian,,,4
+371,Kahill's Steak-Fish Chophouse,4,American,Seafood,Steak,3.5
+372,Rumba Island Bar & Grill,2,BBQ,Caribbean,Seafood,4.6
+373,Red Mesa Cantina,2,Latin American,Mexican,Southwestern,4.6
+374,BellaBrava,2,American,Italian,Seafood,4.1
+375,Ceviche Tapas Bar & Restaurant,2,Spanish,Tapas,,4.1
+376,The Moon Under Water,2,British,Bar Food,Sandwich,4.1
+377,Bern's Steak House,4,American,Desserts,Steak,4.7
+378,Boca Kitchen Bar Market,3,Breakfast,,,3.9
+379,Edison: Food+Drink Lab,4,International,,,3.9
+380,Ceviche Tapas Bar & Restaurant,2,Breakfast,Spanish,Tapas,4.4
+381,Daily Eats,2,American,Burger,,4.4
+382,Salt Rock Grill,3,American,Seafood,Steak,4.2
+383,Mazzaro's Italian Market,1,Italian,Deli,,4.9
+384,Conch Republic Grill,3,Sandwich,Seafood,Steak,4.5
+385,Mr. Dunderbak's Biergarten and Marketplatz,3,European,German,,4.9
+386,Red Mesa Restaurant,3,Breakfast,Mexican,,4.5
+387,Datz,3,Desserts,Bar Food,,4.7
+388,Ella's Americana Folk Art Cafe,3,International,Italian,Southern,4.8
+389,Taco Bus,1,Mexican,Vegetarian,,4.5
+390,The Refinery,3,Seafood,Steak,,4
+391,Columbia Restaurant,3,Cuban,Spanish,,4.4
+392,Buffalo Wild Wings,2,Bar Food,,,3.4
+393,El Toreo Mexican Restaurant,2,Mexican,,,3.1
+394,306 North Restaurant,3,Seafood,Southern,,3.9
+395,Austins Cattle Co,3,Burger,Seafood,Steak,3.7
+396,Beijing Cafe,3,Asian,Chinese,Thai,3.8
+397,Bleu Cafe,2,Pizza,Sandwich,,3.7
+398,Bleu Pub,1,Burger,Bar Food,Vegetarian,3.8
+399,Bubba Jax Crab Shack,3,Fast Food,Seafood,,3.7
+400,Cheddar's Scratch Kitchen,2,American,,,3.7
+401,El Cazador,1,Mexican,,,3.7
+402,Friends Grille and Bar,2,American,Southern,,3.9
+403,Giulios Greek & Italian Restaurant,3,Greek,Italian,,3.8
+404,La Jalisco Supermercato,1,Mexican,,,3.5
+405,Masato Japanese,2,Japanese,Sushi,,3.9
+406,Mom & Dad's Italian Restaurant,2,Italian,,,3.7
+407,Mori's Japanese Steakhouse & Sushi Bar,4,Japanese,Steak,Sushi,3.5
+408,Passage 2 India,2,Indian,Middle Eastern,,3.8
+409,Rodeo Mexican Restaurant,2,Mexican,,,3.8
+410,Steel Magnolias,3,Southern,,,3.8
+411,Smok'n Pig B-B-Q,2,BBQ,,,4.1
+412,Blue House Cafe,1,Coffee and Tea,Mediterranean,,4.3
+413,Masala Grill & Coffee House,1,Indian,Middle Eastern,,3.2
+414,Brown Bottle The Cedar Falls,2,Italian,Pizza,Vegetarian,3.7
+415,Four Queens Dairy Cream,1,Desserts,,,3.9
+416,Hong Kong Chinese Restaurant,1,Chinese,,,3.8
+417,HuHot Mongolian Grill,2,Asian,Chinese,,3.7
+418,J's Homestyle Cooking,1,American,Breakfast,,3.6
+419,Montage,3,American,Italian,Seafood,3.6
+420,Mulligan's Brick Oven Grill,2,Burger,Pizza,Sandwich,3.6
+421,Sakura,3,Japanese,Sushi,,3.8
+422,Scratch,1,Coffee and Tea,Desserts,Beverages,3.7
+423,SOHO Sushi Bar & Deli,2,Sandwich,Sushi,Tapas,3.6
+424,Texas Roadhouse,2,American,BBQ,Steak,3.6
+425,Tony's La Pizzeria,2,Pizza,Sandwich,,3.6
+426,Chapala,2,Mexican,,,3.6
+427,Galleria de Paco,3,American,,,3.6
+428,Golden China,1,Chinese,,,3.7
+429,Rudy's Tacos,2,Mexican,,,3.6
+430,The Screaming Eagle,1,American,Bar Food,,3.7
+431,The Thai Bowl,1,Thai,,,3.5
+432,Tokyo Japanese Steak House,2,Japanese,Steak,Sushi,3.9
+433,Theo Yianni's Authentic Greek Restaurant,2,Burger,Greek,Sandwich,3.9
+434,Fishpatrick's Crabby Cafe,2,Burger,Seafood,Steak,3.2

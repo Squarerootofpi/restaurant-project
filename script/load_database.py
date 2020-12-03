@@ -28,9 +28,9 @@ def pg_load_table(file_path, table_name, dbname, host, port, user, pwd):
 # Execution Example
 file_path = 'restaurantlist.csv'
 table_name = 'app_restaurant_restaurant'
-dbname = 'restaurant_test'
+dbname = 'sample4'
 host = 'localhost'
 port = '5432'
 user = 'postgres'
-pwd = 'password'
+pwd = 'admin'
 pg_load_table(file_path, table_name, dbname, host, port, user, pwd)

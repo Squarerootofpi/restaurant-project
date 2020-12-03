@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block recommendation %}
+
+<div class="container" id="fNumPeople">
+    <div class="row">
+        <form method="post" action="{% url 'rec-forms' %}">
+        {% csrf_token %}
+            <label for="numberOfPeople">How many people in your party?</label>
+            <select id="numberOfPeople" name="people">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <br>
+            <button type="submit" >Submit</button>
+        </form>
+        <br><br>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    function renderTemplate(){
+    
+        {% comment %} numPeople = document.getElementById('numberOfPeople').value; {% endcomment %}
+        peopleSelector = document.getElementById("fNumPeople");
+        peopleSelector.style.display = "none";
+        if (numPeople==1){
+            document.getElementById("person1").hidden = false
+        };
+        alert(numPeople);
+    
+    } 
+    
+</script>
+
+{% endblock%}
+
+
+
+
+
+

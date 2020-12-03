@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block forms %}
+    <div class="container">
+        <div class="row">
+            <form method="get" action="{% url 'rec-final' %}">
+                <h1>Person 1</h1>
+                <div id="person1">
+                    <label for="cost1">Desired Cost</label>
+                    <select id="cost1">
+                        <option value="1">$</option>
+                        <option value="2">$$</option>
+                        <option value="3">$$$</option>
+                    </select>
+                    <h5>Choose favorite cuisines: </h5>
+                    
+                    <label for="Italian1">Italian</label>
+                    <input type="checkbox" id="Italian1" name="Italian1" value="Italian">
+                    <label for="Mexican1">Mexican</label>
+                    <input type="checkbox" id="Mexican1" name="Mexican1" value="Mexican">
+                    <label for="American1">American</label>
+                    <input type="checkbox" id="American1" name="American1" value="American">
+
+                    <br>
+                    <label for="healthy1">On a scale from 1-3, how healthy would you like to eat?</label>
+                    <select id="healthy1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <br>
+
+                </div>
+
+                <br><br>
+
+                <h1>Person 2</h1>
+                <div id="person2">
+                    <label for="cost2">Desired Cost</label>
+                    <select id="cost2">
+                        <option value="1">$</option>
+                        <option value="2">$$</option>
+                        <option value="3">$$$</option>
+                    </select>
+                    <h5>Choose favorite cuisines: </h5>
+                    
+                    <label for="Italian2">Italian</label>
+                    <input type="checkbox" id="Italian2" name="Italian2" value="Italian">
+                    <label for="Mexican2">Mexican</label>
+                    <input type="checkbox" id="Mexican2" name="Mexican2" value="Mexican">
+                    <label for="American2">American</label>
+                    <input type="checkbox" id="American2" name="American2" value="American">
+
+                    <br>
+                    <label for="healthy2">On a scale from 1-3, how healthy would you like to eat?</label>
+                    <select id="healthy2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <br>
+                </div>
+                <button type="submit" >Submit</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

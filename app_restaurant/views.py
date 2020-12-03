@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Restaurant
+import random
 
 # Create your views here.
 def indexPageView(request) :
@@ -24,7 +25,14 @@ def getRandom(request):
     """
     This returns a random restaurant.
     """
-    return HttpResponse('getRandom')
+    data = Restaurant.objects.all()
+    random_restaurant = random.choice(data)
+
+    context = {
+        "random_restaurant" : random_restaurant,
+        "all_restaurants" : data
+    }
+    return render(request, 'app_random_templates/random_restaurant.html', context)
 
     
 def searchAvailable(request):
@@ -34,8 +42,3 @@ def searchAvailable(request):
     return HttpResponse('searchAvailable')
 
     
-def getRecommendation(request):
-    """
-    This returns a recommended restaurant.
-    """
-    return HttpResponse('getRecommendation')

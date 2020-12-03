@@ -1,0 +1,21 @@
+{% extends 'app_restaurant_templates/index.html' %}
+{% block getRandomRestaurant %}
+
+  <tr>
+    <td>{{ random_restaurant.name }}</td>
+    {% if random_restaurant.price_range != None %}
+        <td>{{ random_restaurant.price_range }}</td>
+    {% endif %}
+    {% if random_restaurant.cuisine1 != None and random_restaurant.cuisine2 != None and random_restaurant.cuisine3 != None%}
+        <td>{{ random_restaurant.cuisine1 }}, {{ random_restaurant.cuisine2 }}, {{ random_restaurant.cuisine3 }}</td>
+    {% elif random_restaurant.cuisine1 != None and random_restaurant.cuisine2 != None %}
+        <td>{{ random_restaurant.cuisine1 }}, {{ random_restaurant.cuisine2 }}</td>
+    {% elif random_restaurant.cuisine1 != None%}
+        <td>{{ random_restaurant.cuisine1 }}</td>
+    {% endif %}
+    {% if random_restaurant.rating != None %}
+        <td>{{ random_restaurant.rating }}</td>
+    {% endif %}
+</tr>
+
+{% endblock %}
