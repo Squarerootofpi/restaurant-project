@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block forms %}
     <div class="container">
         <div class="row">
@@ -17,14 +18,14 @@
                     <h3>What sounds good right now? (check all that apply)</h3>
                     
                         {% for cuisine in allCuisines %}
-                            <label for="{ cuisine }}">{{ cuisine }} </label>
-                            <input type="checkbox" id='{{ cuisine }}' name="{{ cuisine }}" value="{{ cuisine }}">
+                            <label for="{{ cuisine }}">{{ cuisine }} </label>
+                            <input type="checkbox" id='{{ cuisine }}' name="cuisine[]" value="{{ cuisine }}">
                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         {% endfor %}
 
                     <br><br>
                     <label for="rating1">Please select the minimum rating for the restaurant (based on google reviews) &nbsp;</label>
-                    <select id="rating1">
+                    <select id="rating1" name="rating1">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>

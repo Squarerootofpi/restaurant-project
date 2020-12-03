@@ -35,11 +35,15 @@ def recForm(request):
 
 def recFinal(request):
     priceRange = request.GET['cost1']
+    rating = request.GET['rating1']
+    aCuisine = request.GET.getlist('cuisine[]')
+    print(aCuisine)
 
-    data = Restaurant.objects.filter(price_range__lte=priceRange)
+    data = Restaurant.objects.filter(price_range__lte=priceRange, rating__gte=rating)
 
     context = {
-        'filtered_restaurants' : data
+        'filtered_restaurants' : data,
+        'checkedCuisine' : aCuisine 
     }
 
     return render(request, 'app_recommendation_templates/final_recommendations.html', context)
