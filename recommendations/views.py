@@ -36,10 +36,10 @@ def recForm(request):
 def recFinal(request):
     priceRange = request.GET['cost1']
     rating = request.GET['rating1']
-    aCuisine = request.GET.getlist('cuisine[]')
-    print(aCuisine)
+    aCuisine = request.GET.getlist('cuisine1')
 
-    data = Restaurant.objects.filter(price_range__lte=priceRange, rating__gte=rating)
+    # data = Restaurant.objects.filter(price_range__lte=priceRange, rating__gte=rating)
+    data = Restaurant.objects.filter(cuisine1__in=aCuisine)
 
     context = {
         'filtered_restaurants' : data,

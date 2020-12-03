@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-import django_heroku
+# import django_heroku
+# There is an error with the installation of dj_database_url, commenting it out for now
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -145,5 +146,5 @@ USE_L10N = True
 
 USE_TZ = True
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
