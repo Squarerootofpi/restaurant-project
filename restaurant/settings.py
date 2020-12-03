@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
-# import django_heroku
+import django_on_heroku
 # There is an error with the installation of dj_database_url, commenting it out for now
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
@@ -35,10 +35,10 @@ STATICFILES_DIRS = [
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '0xw0zf#^slqq^jq*nzzoeed2shk(4oi&-arf!d%y&+36paey73'
-# SECRET_KEY = os.environ.get('SECRET_KEY')
-# EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+# SECRET_KEY = '0xw0zf#^slqq^jq*nzzoeed2shk(4oi&-arf!d%y&+36paey73'
+SECRET_KEY = os.environ.get('SECRET_KEY')
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app_restaurant.apps.AppRestaurantConfig',
     'recommendations.apps.RecommendationsConfig',
+    'whitenoise.runserver_nostatic',
     
 ]
 
@@ -74,6 +75,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'restaurant.urls'
@@ -147,4 +149,5 @@ USE_L10N = True
 USE_TZ = True
 
 # django_heroku.settings(locals())
+django_on_heroku.settings(locals())
 
