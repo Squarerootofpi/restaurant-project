@@ -2,21 +2,21 @@
 {% load static %}
 {% block about %}
 
-  <!-- Container (About Section) -->
-  <div id="about" class="container-fluid">
-    <div class="row">
-      <div class="col-sm-8">
-        <h2>Our Project</h2><br>
-        <h4>
-        We created this project so that you could always find somewhere to eat. </h4><br>
-        <p>Whether you want to look at all the available restaurants in Provo, find a random restaurant, or get a recommendation based on what you like, we have you covered.</p>
-        
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-cutlery logo"></span>
-      </div>
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Our Project</h2><br>
+      <h4>
+      We created this project so that you could always find somewhere to eat. </h4><br>
+      <p>Whether you want to look at all the available restaurants in Provo, find a random restaurant, or get a recommendation based on what you like, we have you covered.</p>
+      
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cutlery logo"></span>
     </div>
   </div>
+</div>
 
   <div class="container-fluid"></div>
   <div class="container-fluid"></div>
@@ -24,8 +24,8 @@
 {% endblock %}
 
 {% block randomRestaurant %}
-
-  <div id="randomRestaurant" class="container">
+<a name="randomRestaurant"></a>
+  <div class="container" style="display:table">
       <div class="col-lg-12">
         <div class="panel panel-default text-center">
           <div class="panel-heading">
@@ -37,13 +37,34 @@
           </div>
           <div class="panel-body">
               <div class="container">
-                  <table class='restaurant-table'>
+                  <table class='random-restaurant'>
                       <thead>
                           <tr>
                               <th>Name</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
                               <th>Price Range</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
                               <th>Cuisine(s)</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
                               <th>Rating</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
                           </tr>
                       </thead>
                       <tbody>
@@ -64,7 +85,8 @@
 {% block allRestaurants %}
 
   <!-- All Restaurants -->
-  <div id="allRestaurants" class="container">
+  <a name="allRestaurants"></a>
+  <div class="container" style="display:table" >
       <div class="col-lg-12">
         <div class="panel panel-default text-center">
           <div class="panel-heading">
@@ -77,8 +99,18 @@
                       <thead>
                           <tr>
                               <th>Name</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
                               <th>Price Range</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
                               <th>Cuisine(s)</th>
+                              <th></th>
+                              <th></th>
+                              <th></th>
                               <th>Rating</th>
                           </tr>
                       </thead>
@@ -86,9 +118,16 @@
                           {% for rest in all_restaurants %}
                               <tr>
                                   <td>{{ rest.name }}</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
                                   {% if rest.price_range != None %}
                                       <td>{{ rest.price_range }}</td>
                                   {% endif %}
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
                                   {% if rest.cuisine1 != None and rest.cuisine2 != None and rest.cuisine3 != None%}
                                       <td>{{ rest.cuisine1 }}, {{ rest.cuisine2 }}, {{ rest.cuisine3 }}</td>
                                   {% elif rest.cuisine1 != None and rest.cuisine2 != None %}
@@ -96,6 +135,9 @@
                                   {% elif rest.cuisine1 != None%}
                                       <td>{{ rest.cuisine1 }}</td>
                                   {% endif %}
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
                                   {% if rest.rating != None %}
                                       <td>{{ rest.rating }}</td>
                                   {% endif %}
@@ -104,7 +146,7 @@
                       </tbody>
                   </table>
               </div>
-        </div>  
+          </div>  
       </div>       
     </div>
   </div>

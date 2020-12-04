@@ -1,38 +1,68 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block finalRecommendation %}
-    <div class="panel-body">
-        <div class="container">
-            <table class='restaurant-table'>
-                <thead>
+<div class="panel-body">
+    <div class="container">
+        <table class='restaurant-table'>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Price Range</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Cuisine(s)</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>Rating</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for rest in filtered_restaurants %}
                     <tr>
-                        <th>Name</th>
-                        <th>Price Range</th>
-                        <th>Cuisine(s)</th>
-                        <th>Rating</th>
+                        <td>{{ rest.name }}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        {% if rest.price_range != None %}
+                            <td>{{ rest.price_range }}</td>
+                        {% endif %}
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        {% if rest.cuisine1 != None and rest.cuisine2 != None and rest.cuisine3 != None%}
+                            <td>{{ rest.cuisine1 }}, {{ rest.cuisine2 }}, {{ rest.cuisine3 }}</td>
+                        {% elif rest.cuisine1 != None and rest.cuisine2 != None %}
+                            <td>{{ rest.cuisine1 }}, {{ rest.cuisine2 }}</td>
+                        {% elif rest.cuisine1 != None%}
+                            <td>{{ rest.cuisine1 }}</td>
+                        {% endif %}
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        {% if rest.rating != None %}
+                            <td>{{ rest.rating }}</td>
+                        {% endif %}
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
-                </thead>
-                <tbody>
-                    {% for rest in filtered_restaurants %}
-                        <tr>
-                            <td>{{ rest.name }}</td>
-                            {% if rest.price_range != None %}
-                                <td>{{ rest.price_range }}</td>
-                            {% endif %}
-                            {% if rest.cuisine1 != None and rest.cuisine2 != None and rest.cuisine3 != None%}
-                                <td>{{ rest.cuisine1 }}, {{ rest.cuisine2 }}, {{ rest.cuisine3 }}</td>
-                            {% elif rest.cuisine1 != None and rest.cuisine2 != None %}
-                                <td>{{ rest.cuisine1 }}, {{ rest.cuisine2 }}</td>
-                            {% elif rest.cuisine1 != None%}
-                                <td>{{ rest.cuisine1 }}</td>
-                            {% endif %}
-                            {% if rest.rating != None %}
-                                <td>{{ rest.rating }}</td>
-                            {% endif %}
-                        </tr>
-                    {% endfor %} 
-                </tbody>
-            </table>
-        </div>
-    </div> 
+                {% endfor %} 
+            </tbody>
+        </table>
+    </div>
+</div>  
+</div>       
 {% endblock %}
+
