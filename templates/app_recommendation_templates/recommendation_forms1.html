@@ -3,7 +3,7 @@
 {% block forms %}
     <div class="container">
         <div class="row">
-            <form method="get" action="{% url 'rec-final' %}">
+            <form method="get" action="{% url 'rec-final' iNumPeople=numPeople %}">
                 <h1>Person 1</h1>
                 <br>
                 <div id="person1">

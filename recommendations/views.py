@@ -4,6 +4,8 @@ from app_restaurant.models import Restaurant
 import random
 import re
 from django.db.models.functions import Length
+from django.db.models import Q
+from itertools import chain
 
 def getRecommendation(request):
     """
@@ -28,22 +30,42 @@ def recForm(request):
         uniqueData[i] = re.sub('[\W_]+', '', holder)
 
     context = {
-        "allCuisines" : uniqueData
+        "allCuisines" : uniqueData,
+        "numPeople" : sNumPeople
     }
     return render(request, f'app_recommendation_templates/recommendation_forms{sNumPeople}.html', context)
 
 
-def recFinal(request):
-    priceRange = request.GET['cost1']
-    rating = request.GET['rating1']
-    aCuisine = request.GET.getlist('cuisine1')
+def recFinal(request, iNumPeople):
+    i=1
+    lPriceRange = []
+    lRating = []
+    aCuisine = []
 
-    # data = Restaurant.objects.filter(price_range__lte=priceRange, rating__gte=rating)
-    data = Restaurant.objects.filter(cuisine1__in=aCuisine)
+    #For loop that grabs variables from each participant
+    for i in range(1, iNumPeople+1):
+        lPriceRange.append(int(request.GET[f'cost{i}']))
+        lRating.append(int(request.GET[f'rating{i}']))
+        aCuisine.append(request.GET.getlist(f'cuisine{i}'))
+    
 
+    
+    lACuisine = list(chain.from_iterable(aCuisine))
+
+    priceRange = sum(lPriceRange)/int(iNumPeople)
+    rating = sum(lRating)/int(iNumPeople)
+    
+    
+
+    data = Restaurant.objects.filter(Q(price_range__lte=priceRange), Q(rating__gte=rating), Q(cuisine1__in=lACuisine) | Q(cuisine2__in=lACuisine) | Q(cuisine3__in=lACuisine))
+    # data = Restaurant.objects.filter(Q(cuisine1__in=aCuisine) | Q(cuisine2__in=aCuisine) | Q(cuisine3__in=aCuisine))
+    
+    
     context = {
         'filtered_restaurants' : data,
-        'checkedCuisine' : aCuisine 
+        'checkedCuisine' : lACuisine,
+        'average_price' : priceRange,
+        'average_rating' : rating
     }
 
     return render(request, 'app_recommendation_templates/final_recommendations.html', context)
